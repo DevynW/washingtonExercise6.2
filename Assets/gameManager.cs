@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class gameManager : MonoBehaviour
 {
-    GameObject coin;
+    [SerializeField] GameObject coin;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,5 +18,14 @@ public class gameManager : MonoBehaviour
         {
             Instantiate(coin);
         }
+    }
+
+    public void victoryScreech()
+    {
+        //put noise for juicing
+    }
+    public void makeCoin()
+    {
+        Instantiate (coin);
     }
 }

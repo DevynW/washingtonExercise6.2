@@ -27,11 +27,16 @@ public class gateOpener : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!frontGate)
+        if (!frontGate && !backGate)
         {
             doorAnimator.Play("openDoor");
 
         }
+
+        /*if (frontGate)
+        {
+            Invoke("makeCoin", 0f);
+        }*/
     }
 
     private void OnTriggerExit(Collider other)

@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 9182088925848242373}
   - component: {fileID: 1646972893174917384}
   - component: {fileID: 589999446704869358}
+  - component: {fileID: 6788765956855660788}
+  - component: {fileID: 4814802160337830420}
   m_Layer: 0
   m_Name: gate
   m_TagString: gate
@@ -118,3 +120,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 595ed4d5bc30e154b9e52ffba70bc7bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &6788765956855660788
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3396225584007420619}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 69683cb470efd124898c1d63cd79963a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &4814802160337830420
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3396225584007420619}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.667797, y: 1.1362514, z: 1}
+  m_Center: {x: -0.022520224, y: -0.0681257, z: 0}
