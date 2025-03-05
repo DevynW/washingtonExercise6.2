@@ -221,6 +221,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7237831229319107446}
+  - component: {fileID: 1685060973410827207}
   - component: {fileID: 5613191336978721152}
   - component: {fileID: 2015790138955937433}
   - component: {fileID: 8886034928220932588}
@@ -228,7 +229,7 @@ GameObject:
   - component: {fileID: 8657239634242090267}
   m_Layer: 0
   m_Name: coin
-  m_TagString: Untagged
+  m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -250,6 +251,21 @@ Transform:
   - {fileID: 6510800726276155887}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1685060973410827207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8934643767357613685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bbd599615a164a42b1ae97da4383c52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinRetrieved:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!33 &5613191336978721152
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -315,7 +331,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2

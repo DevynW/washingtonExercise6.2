@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 595ed4d5bc30e154b9e52ffba70bc7bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coinObj: {fileID: 8934643767357613685, guid: b6a6d3b6635d7364d91f3c78ed19d411, type: 3}
 --- !u!95 &8536307581055705531
 Animator:
   serializedVersion: 5
@@ -160,8 +161,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.667797, y: 1.1362514, z: 1}
-  m_Center: {x: -0.022520224, y: -0.0681257, z: 0}
+  m_Size: {x: 4.667797, y: 1.4180446, z: 1}
+  m_Center: {x: -0.022520224, y: -0.20902143, z: 0}
 --- !u!1 &3396225584007420619
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,7 +174,7 @@ GameObject:
   - component: {fileID: 4369310446596557400}
   m_Layer: 0
   m_Name: gate
-  m_TagString: gate
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

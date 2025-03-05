@@ -5,11 +5,11 @@ using UnityEngine.Events;
 
 public class coinRetieved : MonoBehaviour
 {
-    public UnityEvent powerUp;
+    public UnityEvent coinRetrieved;
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -20,9 +20,10 @@ public class coinRetieved : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        powerUp.Invoke();
-        Invoke("coinRetrieved",0f);
-        Invoke("victoryScreech", 0f);
+        coinRetrieved.Invoke();
+        Debug.Log("fn invoked");
+        /*Invoke("onCoinRetrieval",0f);
+        Invoke("victoryScreech", 0f);*/
         Destroy(gameObject);
     }
 
