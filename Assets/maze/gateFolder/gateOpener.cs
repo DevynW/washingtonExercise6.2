@@ -27,7 +27,7 @@ public class gateOpener : MonoBehaviour
     void Update()
     {
         coin = GameObject.FindGameObjectWithTag("coin");//return ref for coin
-        if (coin != null && i == 0 )
+       /* if (coin != null && i == 0 )
         {
             i = 1;
             coin.GetComponent<coinRetieved>().coinRetrieved.AddListener(OnCoinRetrieval);//if coin exist, subscribe
@@ -36,7 +36,7 @@ public class gateOpener : MonoBehaviour
         else if (coin == null && i == 1)
         {
             i = 0;
-        }
+        }*/
 
        /* if(Input.GetKeyDown(KeyCode.X))
         {
@@ -86,7 +86,7 @@ public class gateOpener : MonoBehaviour
 
     void closeBackGate()
     {
-        i = 0;
+        //i = 0;
         doorAnimator.Play("closeDoor");
         Invoke("makeCoin", 0f);
     }
