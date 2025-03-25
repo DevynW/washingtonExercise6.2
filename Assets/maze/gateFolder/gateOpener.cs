@@ -9,7 +9,7 @@ public class gateOpener : MonoBehaviour
     bool frontGate = false;
     bool coinInScene = false;
     GameObject coin;
-    int i = 0;
+    //int i = 0;
     [SerializeField] GameObject coinObj;
     // Start is called before the first frame update
     void Start()
@@ -80,7 +80,7 @@ public class gateOpener : MonoBehaviour
         }
         if (backGate)
         {
-            Invoke("closeBackGate", 30f);
+            Invoke("closeBackGate", 35f);
         }
     }
 
