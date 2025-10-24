@@ -9,6 +9,8 @@ public class gateOpener : MonoBehaviour
     bool frontGate = false;
     bool coinInScene = false;
     GameObject coin;
+    GameObject instructions;
+    GameObject answer;
     //int i = 0;
     [SerializeField] GameObject coinObj;
     // Start is called before the first frame update
@@ -17,6 +19,13 @@ public class gateOpener : MonoBehaviour
         frontGate = gameObject.CompareTag("frontGate");//is this front gate
         backGate = gameObject.CompareTag("backGate");//is this back gate
         doorAnimator = GetComponent<Animator>();//get ref for animator
+        if (backGate)
+        {
+            instructions = GameObject.FindWithTag("instructions");
+            answer = GameObject.FindWithTag("answer");
+            answer.SetActive(false);
+        }
+            
         if (frontGate)
         {
             doorAnimator.Play("openDoor");//if front gate, open
@@ -54,6 +63,7 @@ public class gateOpener : MonoBehaviour
         }
 
         coin = GameObject.FindGameObjectWithTag("coin"); //return ref for coin
+        
 
         if (coin != null)
         {
@@ -73,6 +83,7 @@ public class gateOpener : MonoBehaviour
 
     public void OnCoinRetrieval()
     {
+       
         Debug.Log("coin retrieved");
         if (!frontGate)
         {
@@ -80,6 +91,8 @@ public class gateOpener : MonoBehaviour
         }
         if (backGate)
         {
+            instructions.SetActive(false);
+            answer.SetActive(true);
             Invoke("closeBackGate", 35f);
         }
     }

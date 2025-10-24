@@ -9,6 +9,8 @@ TagManager:
   - frontGate
   - CinemachineTarget
   - coin
+  - answer
+  - instructions
   layers:
   - Default
   - TransparentFX
